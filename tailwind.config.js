@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      spartan: ['League Spartan', 'sans-serif'],
+    }
   },
   plugins: [],
 }
