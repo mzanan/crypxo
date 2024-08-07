@@ -1,5 +1,3 @@
-  Crypxo README
-
 # Crypxo
 
 **Crypxo** is a React project with TypeScript and Vite for a fast and efficient development experience. This project utilizes modern tools to ensure clean and well-structured code.
