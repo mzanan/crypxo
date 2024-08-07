@@ -15,7 +15,7 @@
 To get started with Crypxo, clone the repository and install the dependencies.
 
 ```
-git clone <REPOSITORY_URL>
+git clone git clone https://github.com/mzanan/crypxo.git
 cd crypxo
 yarn install
 ```
