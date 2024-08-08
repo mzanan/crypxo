@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#6900FF",
+      },
+    },
     fontFamily: {
       spartan: ["League Spartan", "sans-serif"],
     },
