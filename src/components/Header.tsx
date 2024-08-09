@@ -19,10 +19,10 @@ const Header = () => (
     </ul>
 
     <div className="row gap-7">
-      <div className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl">
+      <button className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl">
         <span className="text-primary text-xl font-bold">Get Started</span>
         <GetStarted />
-      </div>
+      </button>
 
       <LightMode />
     </div>
