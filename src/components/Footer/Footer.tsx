@@ -1,10 +1,10 @@
+import React from 'react'
 import twitter from '../../assets/icons/twitter.png'
 import telegram from '../../assets/icons/telegram.png'
 import medium from '../../assets/icons/medium.png'
 import Market from '../../assets/icons/Market.tsx'
 import watch from '../../assets/icons/watch.png'
 import yahoo from '../../assets/icons/yahoo.png'
-import React from 'react'
 
 const Footer = () => (
   <div className="row justify-between">

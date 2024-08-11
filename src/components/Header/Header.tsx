@@ -11,9 +11,11 @@ const Header = () => (
 
     <ul className="text-2xl row gap-20">
       <li className="font-bold">Discover</li>
-      <div className="row gap-4">
+      <div className="row gap-4 items-center">
         <li>NFT Marketplace</li>
-        <li className="bg-primary text-[14px] font-bold px-2 rounded">New</li>
+        <li className="bg-primary text-[14px] font-bold px-2 pb-2 h-6 rounded col justify-center">
+          <span className="h-6">New</span>
+        </li>
       </div>
       <li>How it Work</li>
     </ul>

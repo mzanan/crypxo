@@ -5,6 +5,7 @@ import Heart from './assets/icons/Heart.tsx'
 import vrDarkImage from './assets/images/vr-dark.png'
 import doubleArrow from './assets/icons/double-arrow.png'
 import './index.css'
+import NewsCard from './components/NewsCard/NewsCard.tsx'
 
 const App = () => {
   return (
@@ -39,12 +40,16 @@ const App = () => {
             </div>
           </div>
 
-          <img
-            src={vrDarkImage}
-            alt="vr image"
-            className="absolute top-0 right-0 w-[1030px] h-[1030px]"
-          />
+          <div className="absolute top-0 right-0 max-w-[1030px] max-h-[1030px] w-full h-full aspect-square">
+            <img
+              src={vrDarkImage}
+              alt="vr image"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
+
+        <NewsCard />
 
         <Footer />
       </div>
