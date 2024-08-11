@@ -1,5 +1,5 @@
-import GetStarted from '../assets/icons/GetStarted.tsx'
-import LightMode from '../assets/icons/LightMode.tsx'
+import GetStarted from '../../assets/icons/GetStarted.tsx'
+import LightMode from '../../assets/icons/LightMode.tsx'
 import React from 'react'
 
 const Header = () => (

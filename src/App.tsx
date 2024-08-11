@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/Header.tsx'
+import Header from './components/Header/Header.tsx'
 import Footer from './components/Footer/Footer.tsx'
 import Heart from './assets/icons/Heart.tsx'
 import vrDarkImage from './assets/images/vr-dark.png'
