@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from './components/Header.tsx'
-import GetStarted from './assets/icons/GetStarted.tsx'
+import Footer from './components/Footer/Footer.tsx'
+import Heart from './assets/icons/Heart.tsx'
 import vrDarkImage from './assets/images/vr-dark.png'
+import doubleArrow from './assets/icons/double-arrow.png'
 import './index.css'
 
 const App = () => {
@@ -25,14 +27,14 @@ const App = () => {
             <div className="row gap-7">
               <button className="row items-center gap-4 px-8 py-2 bg-primary rounded-3xl">
                 <span className="text-xl font-bold">Start Now</span>
-                <GetStarted />
+                <img src={doubleArrow} alt="arrow" />
               </button>
 
               <button className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl">
                 <span className="text-primary text-xl font-bold">
                   Get Whitelisted
                 </span>
-                <GetStarted />
+                <Heart />
               </button>
             </div>
           </div>
@@ -44,7 +46,7 @@ const App = () => {
           />
         </div>
 
-        <p>footer</p>
+        <Footer />
       </div>
     </div>
   )

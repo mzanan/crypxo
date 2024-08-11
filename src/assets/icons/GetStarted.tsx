@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
 type TypeIconProps = {
-  color?: string;
-  size?: number;
-};
+  color?: string
+  size?: number
+}
 
 const GetStarted = ({
-  color = "#6900FF",
+  color = '#6900FF',
   size = 28,
   ...props
 }: TypeIconProps) => (
@@ -40,8 +40,6 @@ const GetStarted = ({
       fill={color}
     />
   </svg>
-);
-{
-}
+)
 
-export default GetStarted;
+export default GetStarted
