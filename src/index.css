@@ -8,6 +8,8 @@
   body {
     font-family: 'League Spartan', sans-serif;
     color: white;
+    @apply text-black dark:text-white;
+    @apply bg-white dark:bg-black
   }
 
   .row {

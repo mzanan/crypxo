@@ -3,20 +3,32 @@ import Header from './components/Header/Header.tsx'
 import Footer from './components/Footer/Footer.tsx'
 import Heart from './assets/icons/Heart.tsx'
 import vrDarkImage from './assets/images/vr-dark.png'
+import vrLightImage from './assets/images/vr-light.png'
 import doubleArrow from './assets/icons/double-arrow.png'
-import './index.css'
 import NewsCard from './components/NewsCard/NewsCard.tsx'
+import './index.css'
+import { useTheme } from './contexts/ThemeProvider/ThemeProvider.tsx'
 
 const App = () => {
+  const { theme } = useTheme()
+
   return (
-    <div className="w-full h-screen bg-black relative">
-      <div className="container col justify-between py-16 mx-auto gap-40 h-screen">
+    <div className="w-full h-screen relative">
+      <div className="w-[246px] h-[580px] bg-shape-left bg-no-repeat absolute top-32 left-0 -z-10"></div>
+      <div className="w-[1100px] h-[480px] bg-shape-bottom bg-no-repeat absolute bottom-0 right-0 -z-10"></div>
+
+      <div className="container col justify-between py-16 mx-auto h-screen">
         <Header />
 
-        <div className="col px-20 gap-40">
+        <div className="row items-center justify-between px-20">
           <div className="col gap-10 max-w-[650px]">
             <p className="font-bold text-6xl">
-              The 1st AMM Dex & DAO based on brc-20 token standard
+              The 1st AMM Dex & DAO based on{' '}
+              <span className="relative inline-block">
+                brc-20
+                <div className="absolute h-1/3 w-[110%] bg-yellow dark:bg-primary bottom-2 -left-2 -z-10"></div>
+              </span>{' '}
+              token standard
             </p>
 
             <p className="text-2xl">
@@ -27,26 +39,26 @@ const App = () => {
 
             <div className="row gap-7">
               <button className="row items-center gap-4 px-8 py-2 bg-primary rounded-3xl">
-                <span className="text-xl font-bold">Start Now</span>
+                <span className="text-white text-xl font-bold">Start Now</span>
                 <img src={doubleArrow} alt="arrow" />
               </button>
 
               <button className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl">
-                <span className="text-primary text-xl font-bold">
+                <span className="text-black dark:text-primary text-xl font-bold">
                   Get Whitelisted
                 </span>
-                <Heart />
+                <Heart
+                  color={theme === 'dark' ? 'fill-primary' : 'fill-black'}
+                />
               </button>
             </div>
           </div>
 
-          <div className="absolute top-0 right-0 max-w-[1030px] max-h-[1030px] w-full h-full aspect-square">
-            <img
-              src={vrDarkImage}
-              alt="vr image"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <img
+            src={theme === 'dark' ? vrDarkImage : vrLightImage}
+            alt="vr image"
+            className="max-w-[600px] max-h-[600px] w-full h-full"
+          />
         </div>
 
         <NewsCard />
