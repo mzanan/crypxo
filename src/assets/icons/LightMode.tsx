@@ -5,7 +5,7 @@ type TypeIconProps = {
   size?: number
 }
 
-const GetStarted = ({
+const LightMode = ({
   color = '#FFFFFF',
   size = 43,
   ...props
@@ -51,4 +51,4 @@ const GetStarted = ({
   </svg>
 )
 
-export default GetStarted
+export default LightMode
