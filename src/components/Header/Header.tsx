@@ -12,13 +12,13 @@ const Header = () => {
   }
 
   return (
-    <div className="row items-center justify-between w-full">
+    <div className="row items-center justify-between w-full px-20">
       <p className="font-bold text-5xl">
         <span>Cryp</span>
         <span className="text-primary">XO</span>
       </p>
 
-      <ul className="text-2xl row gap-20">
+      <ul className="text-2xl row lg:gap-6 xl:gap-20">
         <li className="font-bold">Discover</li>
         <div className="row gap-4 items-center">
           <li>NFT Marketplace</li>
@@ -30,7 +30,7 @@ const Header = () => {
       </ul>
 
       <div className="row gap-7">
-        <button className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl">
+        <button className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl lg:hidden xl:flex ">
           <span className="text-black dark:text-primary text-xl font-bold">
             Get Started
           </span>

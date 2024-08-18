@@ -11,7 +11,7 @@ const Footer = () => {
   const { theme } = useTheme()
 
   return (
-    <div className="row justify-between">
+    <div className="row justify-between px-20">
       <div className="row bg-white dark:bg-dark rounded-3xl rounded-tl-none px-5 py-2 gap-4 items-center text-xl font-light shadow">
         Connect
         <img src={twitter} alt="twitter" />

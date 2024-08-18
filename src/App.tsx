@@ -21,8 +21,8 @@ const App = () => {
         <Header />
 
         <div className="row items-center justify-between px-20">
-          <div className="col gap-10 max-w-[650px]">
-            <p className="font-bold text-6xl">
+          <div className="col gap-10 max-w-[650px] w-full flex-1">
+            <p className="font-bold lg:text-5xl xl:text-6xl">
               The 1st AMM Dex & DAO based on{' '}
               <span className="relative inline-block">
                 brc-20
@@ -38,12 +38,12 @@ const App = () => {
             </p>
 
             <div className="row gap-7">
-              <button className="row items-center gap-4 px-8 py-2 bg-primary rounded-3xl">
+              <button className="row items-center justify-center gap-4 lg:px-3 lg:py-0 xl:px-8 xl:py-2 bg-primary rounded-3xl min-w-[180px] min-h-14">
                 <span className="text-white text-xl font-bold">Start Now</span>
                 <img src={doubleArrow} alt="arrow" />
               </button>
 
-              <button className="row items-center gap-4 px-8 py-2 border border-primary rounded-3xl">
+              <button className="row items-center justify-center gap-4 lg:px-3 lg:py-0 xl:px-8 xl:py-2 border border-primary rounded-3xl min-w-[220px] min-h-14">
                 <span className="text-black dark:text-primary text-xl font-bold">
                   Get Whitelisted
                 </span>
@@ -54,11 +54,13 @@ const App = () => {
             </div>
           </div>
 
-          <img
-            src={theme === 'dark' ? vrDarkImage : vrLightImage}
-            alt="vr image"
-            className="max-w-[600px] max-h-[600px] w-full h-full"
-          />
+          <div className="max-w-[550px] max-h-[550px] w-full h-full aspect-square">
+            <img
+              src={theme === 'dark' ? vrDarkImage : vrLightImage}
+              alt="vr image"
+              className="w-full h-full flex flex-1 aspect-square"
+            />
+          </div>
         </div>
 
         <NewsCard />
